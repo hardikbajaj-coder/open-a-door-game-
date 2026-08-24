@@ -5,13 +5,15 @@ def play_vault_game():
         {"q": "Which planet is known as the Red Planet? ", "a": "mars"},
         {"q": "What is the capital city of India? ", "a": "new delhi"},
         {"q": "How many states are there in India? ", "a": "28"},
-        {"q": "Which is the tallest animal on Earth? ", "a": "giraffe"},
+        {"q": "Which is the largest animal on Earth? ", "a": "blue whale"},
         {"q": "What is the standard unit of electrical resistance? ", "a": "ohm"},
-        {"q": "Who is considered the father of modern computing? ", "a": "alan turing"},
+        {"q": "What is the si unit of power? ", "a": "watt"},
         {"q": "Which is the longest river in the world? ", "a": "nile"},
         {"q": "What does 'URL' stand for in networking? ", "a": "uniform resource locator"},
         {"q": "Which organelle is the powerhouse of the cell? ", "a": "mitochondria"},
-        {"q": "In which country is the ancient city of Petra located? ", "a": "jordan"}
+        {"q": "what is capital of japan? ", "a": "tokyo"},
+        {"q": "how many union teritaries in india ", "a": "8"}
+
     ]
 
     # Initialize a global score counter
@@ -19,22 +21,22 @@ def play_vault_game():
     doors_bypassed_with_penalty = 0
 
     print("=========================================================")
-    print("🏰 WELCOME TO THE GRAND 10-DOOR VAULT TOURNAMENT! 🏰")
+    print("🏰 WELCOME TO THE GRAND 11-DOOR VAULT TOURNAMENT! 🏰")
     print("=========================================================")
     print(f" Starting Score: {total_score} Points")
-    print("Rules: You must pass through 10 different secure doors.")
+    print("Rules: You must pass through 11 different secure doors.")
     print(" You have 3 attempts per door. If you fail to unlock a door:")
     print("    A penalty of -50 points will be deducted!")
     print("    The door will automatically bypass, moving you to the next level.\n")
     print("Press Enter to approach Door 1...")
     input()
 
-    for current_level in range(1, 11):
+    for current_level in range(1, 12):
         level_data = levels_database[current_level - 1]
         question = level_data["q"]
         correct_answer = level_data["a"]
 
-        print(f"\n --- APPROACHING DOOR {current_level} / 10 ---")
+        print(f"\n --- APPROACHING DOOR {current_level} / 11 ---")
         print(f" Current Score: {total_score} Points")
         
         attempts_left = 3
