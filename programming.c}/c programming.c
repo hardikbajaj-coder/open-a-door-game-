@@ -96,7 +96,18 @@ int main() {
 
     printf(" %d * i = %d\n", n, n*i);
 
-//11;     
+//11; perimeter and area of a plot
+    int main() {
+    int leanth , breadth;
+
+                printf("Enter the value of leanth: ");
+                    scanf("%d", &leanth);
+                    printf("Enter the value of breadth: ");
+                                        scanf("%d", &breadth);
+
+                                            printf("The are of plot is %d\n", leanth*breadth);
+                                            printf("perimeter of a rectangle is %d\n" , (2*(leanth + breadth)));
+    //12;     
     return 0;
 }
 
