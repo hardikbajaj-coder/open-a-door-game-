@@ -65,6 +65,24 @@ printf("The area of the rectangle is: %f\n", length * breadth);
 //8; 
 float result = pow(6.0, 2.0);
 printf("The result of 6 raised to the power of 2 is: %f\n", result);
+
+//9; a year is a leap year or not;
+int year ;
+printf("enter the year : ");
+scanf("%d",&year);
+if (year%4==0)
+if (year%100!=0)
+ { printf("year is a leap year");}
+  else
+     if(year%400==0)
+    { printf("year is a leap year");}
+     
+     else
+     {printf("year is not a leap year");}
+
+     else 
+     {printf("year is not a leap year");}}
+
     return 0;
 }
 
