@@ -82,7 +82,21 @@ if (year%100!=0)
 
      else 
      {printf("year is not a leap year");}}
+//10; table of a no.
+int main() {
+    int n, i;
 
+                printf("Enter the value of N: ");
+                    scanf("%d", &n);
+
+                    
+                            for (i = 1; i <=10; i++) 
+                            
+                                        
+
+    printf(" %d * i = %d\n", n, n*i);
+
+//11;     
     return 0;
 }
 
