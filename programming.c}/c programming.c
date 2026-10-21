@@ -107,9 +107,96 @@ int main() {
 
                                             printf("The are of plot is %d\n", leanth*breadth);
                                             printf("perimeter of a rectangle is %d\n" , (2*(leanth + breadth)));
-    //12;     
+    12 ;
+        #include <stdio.h>
+
+int main() {
+    int n, i;
+    
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    
+    // Corrected commas to semicolons, and removed the duplicate 'int'
+    for (i = 1; i < 11; i++) { 
+        // Corrected format string to calculate and print the actual product
+        printf("%d * %d = %d\n", n, i, n * i);
+    }
+    
+    return 0; 
+}
+13;
+#include <stdio.h>
+
+int main() {
+    int n, remainder;
+    int reverse = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0) {
+        remainder = n % 10;         
+        reverse = reverse * 10 + remainder; 
+        n = n / 10;               
+    }
+
+    printf("Reverse of the no. is %d\n", reverse);
+
     return 0;
 }
+14;
+#include <stdio.h>
+
+int main() {
+    int num, remainder;
+    int reverse = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    for (; num != 0; num = num / 10) {
+        remainder = num % 10;              
+        reverse = reverse * 10 + remainder; 
+    }
+
+    printf("Reverse of the no. is %d\n", reverse);
+
+    return 0;
+}
+15;#include <stdio.h>
+
+int main() {
+    int n;
+    int i = 1;         
+    int product = 1;    
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (i <= n) {
+        product = product * i;
+        i += 1; 
+    }
+    
+    printf("Factorial of %d is %d\n", n, product);
+
+    return 0;
+}
+16;
+#include <stdio.h>
+int main() {
+int n;
+int sum = 0;
+int rem;
+printf("enter the no ");
+scanf("%d" , &n);
+while(n!=0) {
+    rem = n%10;
+    sum = sum + rem;
+    n = n/10;}
+    printf("sum of the digits is %d" , sum);
+
+return 0;}
+
+
+
 
 
 
