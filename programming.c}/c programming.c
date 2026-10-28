@@ -194,6 +194,56 @@ while(n!=0) {
     printf("sum of the digits is %d" , sum);
 
 return 0;}
+17; cheak for prime no.
+#include <stdio.h>
+int main()
+{
+    int n , i, prime=0;
+    printf("enter the value of n: ");
+    scanf("%d" , &n);
+    if(n<=1) {
+        prime =1;}
+        else{
+        for(i=2;i<n;i++)
+        if (n%i==0) {
+            prime = 1;
+            
+        } 
+        if(prime==1)
+        {printf("%d is not prime",n);}
+        else
+ {printf("%d is prime no." , n);}
+}}
+18; print pattern
+#include <stdio.h>
+int main()
+{
+    int i,j, row= 4;
+    for(i=1;i<='D';i++) {
+        for(j='A';j<=i;j++){
+            printf("%c" , i);
+      }
+        printf("\n");
+
+    }
+return 0;
+}
+19; 
+#include <stdio.h>
+int main()
+{
+    int i,j, n=1;
+    for(i=1 ;i<=4;i++) {
+        for(j=1;j<=i;j++){
+            printf("%d" , n);
+            n++;
+        }
+        printf("\n");
+
+    }
+return 0;
+}
+
 
 
 
